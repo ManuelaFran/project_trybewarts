@@ -10,3 +10,11 @@ function verificaEmailSenha() {
   }
 }
 button.addEventListener('click', verificaEmailSenha);
+
+const buttonSubmit = document.querySelector('#submit-btn');
+const inputCheckbox = document.querySelector('#agreement');
+
+function habilitaBotão() {
+  buttonSubmit.disabled = false;
+}
+inputCheckbox.addEventListener('click', habilitaBotão);
