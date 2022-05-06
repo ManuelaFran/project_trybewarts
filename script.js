@@ -18,3 +18,15 @@ function habilitaBotão() {
   buttonSubmit.disabled = false;
 }
 inputCheckbox.addEventListener('click', habilitaBotão);
+
+const countCharacter = document.querySelector('#counter');
+const textArea = document.querySelector('#textarea');
+
+function contarCaracteres() {
+  if (textArea.value.length === 0) {
+    countCharacter.innerHTML = 500;
+  } else {
+    countCharacter.innerHTML = 500 - textArea.value.length;
+  }
+}
+textArea.addEventListener('keyup', contarCaracteres);
