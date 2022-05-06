@@ -48,3 +48,13 @@ main {
   display: flex;
   justify-content: row;
 }
+
+#email-house {
+  display: flex;
+  justify-content: row;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
