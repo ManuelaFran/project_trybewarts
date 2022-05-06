@@ -7,17 +7,20 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  height: 70px;
+  padding: 10px;
 }
 
 .trybewarts-login {
   display: flex;
-  justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 #trybewarts-header-title {
   display: flex;
   align-items: center;
+  color: white;
 }
 
 main {
@@ -57,4 +60,18 @@ main {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+.trybewarts-header-logo {
+  padding: 5px;
+}
+
+.senha , .email , .btn-entrar {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.btn-entrar {
+  background-color: rgb(148, 64, 148);
+  width: 100px;
 }
