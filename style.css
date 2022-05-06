@@ -33,3 +33,18 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#input-name {
+  display: flex;
+  width: 40%;
+}
+
+#input-lastname {
+  display: flex;
+  width: 40%;
+}
+
+#name-lastname {
+  display: flex;
+  justify-content: row;
+}
