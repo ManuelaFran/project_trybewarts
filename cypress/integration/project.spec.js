@@ -347,7 +347,7 @@ describe('Trybewarts', () => {
     });
   });
 
-  describe('21 - Faça com que ao clicar no botão `Enviar`, o conteúdo do formulário seja substituído pelas informações preenchidas', () => {
+  describe.only('21 - Faça com que ao clicar no botão `Enviar`, o conteúdo do formulário seja substituído pelas informações preenchidas', () => {
     const firstName = 'John';
     const lastName = 'Doe';
     const email = 'johndoe@trybe.com';
