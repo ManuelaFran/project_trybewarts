@@ -42,26 +42,19 @@ function materiasSelecionadas() {
 
 function recuperaDadosForm() {
   const nota = document.querySelector('input[name="rate"]:checked').value;
-
+  const nome1 = document.querySelector('#input-name').value;
+  const nome2 = document.querySelector('#input-lastname').value;
   const objeto = {
-    Nome: ` ${document.querySelector('#input-name').value} ${document.querySelector('#input-lastname').value}`,
-    /* Sobrenome: document.querySelector('#input-lastname').value, */
+    Nome: ` ${nome1} ${nome2}`,
     Email: ` ${document.querySelector('#input-email').value}`,
     Casa: ` ${document.querySelector('#house').value}`,
     Família: ` ${document.querySelector('input[name="family"]:checked').value}`,
-    /* Conteudo: document.querySelectorAll('.subject:checked')[0], */
     Matérias: materiasSelecionadas(),
     Avaliação: ` ${nota}`,
     Observações: ` ${document.querySelector('#textarea').value}`,
   };
   return objeto;
 }
-
-// function retornaFormulario(event) {
-//   event.preventDefault();
-//   const dadosForms = recuperaDadosForm();
-// }
-// buttonSubmit.addEventListener('click', retornaFormulario);
 
 function imprimeInputs() {
   const newForm = document.getElementById('new-form');
